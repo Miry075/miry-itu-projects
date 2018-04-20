@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name="jndi/MongoDB"
+	    auth="Container"
+	    type="org.springframework.data.mongodb.MongoDbFactory"
+	    factory="com.t2i.actualite.commun.databases.jndi.SimpleMongoDbJNDIFactory"
+	    username=""
+	    password=""
+	    host="localhost"
+	    port="27017"
+	    db="fil-actualite" />
+ </Context>

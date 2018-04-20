@@ -1,0 +1,13 @@
+--code|nom|complement | groupe
+---------------------------------
+hmha|HARIVAO|Hery Mirindra|All Company,T2i,HR-coffee,Java
+mrrr|RAKOTO-RAJOHARISON|Mahery Romy|All Company,T2i,HR-coffee,Java
+anra|RANDRIANASOLO|Andolalaina|All Company,T2i,Angular,Java
+rian|ANDRIAMIFIDIMANANA|Rinah|All Company,T2i,Angular,Java
+fara|RAJOMASON|Fabrice|All Company,T2i,Angular
+T2i|T2i||
+Java|Java||
+Angular|Angular||
+All Company|All Company||
+mean|ANDRIANTSIHOARANA|Mendrika|All Company,T2i,HR-coffee,Angular
+HR-coffee|HR-coffee||

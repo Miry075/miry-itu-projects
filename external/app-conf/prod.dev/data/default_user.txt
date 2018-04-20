@@ -1,0 +1,4 @@
+--username|password|email | roles
+---------------------------------
+pAdmin|pAdmin123|pAdmin@test.com|ADMIN
+pUser|pUser123|pAdmin@test.com|USER

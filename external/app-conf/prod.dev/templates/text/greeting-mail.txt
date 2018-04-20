@@ -1,0 +1,13 @@
+[( #{email.greeting(${name})} )]  (dans le fichier emails.properties)
+
+[# th:if="${name.length() gt 10}"] Wow, vous avez un nom plus de 10 caractères![/]
+
+[(#{home.welcome.message})] (dans le fichier messages.properties)
+
+Test liste copies : 
+[# th:each="cc : ${copies}"]
+ - [( ${cc} )]
+[/]
+
+Cordialement,
+    [( ${name} )]

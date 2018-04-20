@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{fragments/layouts/empty-decorator}"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:text="#{page.home.title}">Welcome!</title>
+<!--/*-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="../../../resources/css/bootstrap.min.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/bootstrap.min.css}" />
+<link href="../../../resources/css/core.css" rel="stylesheet"
+	media="screen" th:href="@{/resources/css/core.css}" />
+<link href="../../../resources/css/lobibox/Lobibox.min.css"
+	rel="stylesheet" media="screen"
+	th:href="@{/resources/css/lobibox/Lobibox.min.css}" />
+<!--*/-->
+</head>
+<body>
+
+	<!--/*-->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".nav-collapse">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<strong> <a class="navbar-brand" href="#"
+					th:text="#{application.title}">Demo project</a>
+				</strong>
+			</div>
+		</div>
+	</div>
+	<!--*/-->
+
+	<!-- DEBUT CONTENT -->
+	<div class="container" layout:fragment="body-content" th:remove="tag">
+		<div class="text-center">
+			<h1 th:text="#{application.title}">Demo project</h1>
+			<p class="lead">
+				<a href="#docs" th:href="@{/swagger-ui.html}"
+					th:text="#{home.welcome.message}"></a>
+			</p>
+		</div>
+	</div>
+	<!-- FIN CONTENT -->
+
+	<!--/*-->
+	<div th:fragment="footer" th:align="center">
+		&copy; 2016 Footer - <span
+			th:text="#{page.footer.version(${@environment.getProperty('application.version')})}"></span>
+	</div>
+
+	<script src="../../../resources/js/jquery.1.11.min.js"
+		th:src="@{/resources/js/jquery.1.11.min.js}"></script>
+	<script src="../../../resources/js/bootstrap.min.js"
+		th:src="@{/resources/js/bootstrap.min.js}"></script>
+	<script src="../../../resources/js/lobibox/lobibox.min.js"
+		th:src="@{/resources/js/lobibox/lobibox.min.js}"></script>
+	<script src="../../../resources/js/lobibox/messageboxes.min.js"
+		th:src="@{/resources/js/lobibox/messageboxes.min.js}"></script>
+	<script src="../../../resources/js/lobibox/notifications.min.js"
+		th:src="@{/resources/js/lobibox/notifications.min.js}"></script>
+
+	<!--*/-->
+
+	<th:block layout:fragment="script-content">
+
+
+	</th:block>
+
+</body>
+</html>

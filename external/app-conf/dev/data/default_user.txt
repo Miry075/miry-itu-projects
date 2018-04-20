@@ -1,0 +1,10 @@
+--username|password|email | roles
+---------------------------------
+pAdmin|pAdmin123|pAdmin@test.com|ADMIN
+pUser|pUser123|pAdmin@test.com|USER
+hmha|hmha123|hmha@test.com|USER
+mrrr|mrrr123|mrrr@test.com|USER
+anra|anra123|anra@test.com|USER
+rian|rian123|rian@test.com|USER
+fara|fara123|fara@test.com|USER
+mean|mean123|mean@test.com|USER

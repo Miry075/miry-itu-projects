@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"  layout:decorate="{fragments/layouts/default-decorator}">
+    <head>
+        <title th:remove="all">Test thymeleaf template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body layout:fragment="body-content">
+        <p th:text="#{email.greeting(${name})}">
+            Bonjour, Peter Static! (dans le fichier emails.properties)
+        </p>
+        <p th:if="${name.length() gt 10}">
+            Wow, vous avez un nom plus de 10 caractères!! <br />
+        </p>
+		<p th:text="#{home.welcome.message}">
+			(dans le fichier messages.properties)
+		</p> 
+        <p>Test liste copies : </p>
+        <ul th:remove="all-but-first">
+            <li th:each="cc : ${copies}"
+                th:text="${cc}">Reading</li>
+            <li>Writing</li>
+            <li>Bowling</li>
+        </ul>
+        <p>
+            Cordialement, <br />
+            &emsp; <em th:text="${name}"> Gigs</span></em>
+        </p>
+    </body>
+</html>
